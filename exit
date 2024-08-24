@@ -1,0 +1,78 @@
+[33mcommit a2231897acf3b4714e27759fdb0effa1576d0ebb[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdesign[m[33m, [m[1;31morigin/design[m[33m)[m
+Merge: 3d3543f f29b393
+Author: elopez2021 <edgarlopez19082004@gmail.com>
+Date:   Thu Aug 8 16:48:26 2024 -0400
+
+    added adgv functionality to usuarios and clientes views
+
+[33mcommit 3d3543f6a0ff1fbc314fd99d392685bde883b11d[m
+Author: elopez2021 <edgarlopez19082004@gmail.com>
+Date:   Thu Aug 8 14:51:19 2024 -0400
+
+    user design changed
+
+[33mcommit f29b393b4b86b2345ab7f2ed1d347fee47a6734a[m
+Author: CesarMoronta <141197386+CesarMoronta@users.noreply.github.com>
+Date:   Wed Aug 7 23:49:25 2024 -0400
+
+    eliminar guna 1, añadir advancedgrid
+
+[33mcommit 87dc818b1381caddbcf2ab034a89c6361e5c31db[m
+Author: CesarMoronta <141197386+CesarMoronta@users.noreply.github.com>
+Date:   Wed Aug 7 02:37:01 2024 -0400
+
+    cambio en tamaño de frames, añadir y cambiar botones, cambio en inicio
+
+[33mcommit 7aa4090142e5dd5dc6ea161a61dd4b6d35204da7[m
+Author: CesarMoronta <141197386+CesarMoronta@users.noreply.github.com>
+Date:   Fri Aug 2 00:07:41 2024 -0400
+
+    PT6
+    
+    Todos los visuales de mantenimientos realizados.
+
+[33mcommit fcd68ac4059f241cbb1a06d7d534659de33a1b30[m
+Author: CesarMoronta <141197386+CesarMoronta@users.noreply.github.com>
+Date:   Wed Jul 31 23:54:44 2024 -0400
+
+    PT5
+    
+    Ligeros cambios en Menu y modificación SlideShow en inicio.
+
+[33mcommit 969676c2d305d7a96fe965662ba0cc23e2756920[m
+Author: CesarMoronta <141197386+CesarMoronta@users.noreply.github.com>
+Date:   Wed Jul 31 22:49:23 2024 -0400
+
+    PT4
+    
+    Ligeros cambios en medidas y moneda. Se añadió la visual de mant. clientes
+
+[33mcommit 70fd274cce420972133007814fc5385e0d710d47[m
+Author: CesarMoronta <141197386+CesarMoronta@users.noreply.github.com>
+Date:   Wed Jul 31 22:27:42 2024 -0400
+
+    PT3
+    
+    Se añadió el visual de mantenimiento moneda y medidas
+
+[33mcommit 4a703a71f4743481e1ffb319c79cc5e68a4cae1f[m
+Author: CesarMoronta <141197386+CesarMoronta@users.noreply.github.com>
+Date:   Wed Jul 31 22:06:40 2024 -0400
+
+    PT2
+    
+    Se añadió el visual de mantenimiento de proveedor
+
+[33mcommit abf29758d6a2c3261bbc514ba2de92d30926b974[m
+Author: CesarMoronta <141197386+CesarMoronta@users.noreply.github.com>
+Date:   Sun Jul 28 17:46:19 2024 -0400
+
+    pt1
+    
+    Aqui se añade el frame de mantenimiento de usuarios, diseño basico y sin funcionamiento
+
+[33mcommit 1795aeea4d91babcd93535913f9a8ab34699caa5[m
+Author: elopez2021 <edgarlopez19082004@gmail.com>
+Date:   Sun Jul 7 15:56:17 2024 -0400
+
+    Login design and menu created

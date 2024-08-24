@@ -1,0 +1,607 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{31B27635-9D33-4D6E-9068-5844281E087B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Restaurant</RootNamespace>
+    <AssemblyName>Restaurant</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Views\Logo Pizzeria %28Icon%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Restaurant.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>62EB7EDCBBB21E5CB1860C6B1BD5131D2E49694B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Restaurant_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AdvancedDataGridView, Version=1.2.29301.14, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DG.AdvancedDataGridView.1.2.29301.14\lib\net40\AdvancedDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\packages\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\packages\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\CategoriaModel.cs" />
+    <Compile Include="Models\ClienteModel.cs" />
+    <Compile Include="Models\DepartamentoModel.cs" />
+    <Compile Include="Models\FacturaModel.cs" />
+    <Compile Include="Models\ImpuestoModel.cs" />
+    <Compile Include="Models\MedidaModel.cs" />
+    <Compile Include="Models\MesaModel.cs" />
+    <Compile Include="Models\MonedaModel.cs" />
+    <Compile Include="Models\PedidoModel.cs" />
+    <Compile Include="Models\PedidoProductoModel.cs" />
+    <Compile Include="Models\ProductoModel.cs" />
+    <Compile Include="Models\ProveedorModel.cs" />
+    <Compile Include="Models\ProvinciaModel.cs" />
+    <Compile Include="Models\SalaModel.cs" />
+    <Compile Include="Models\SucursalModel.cs" />
+    <Compile Include="Models\TipoClienteModel.cs" />
+    <Compile Include="Models\TipoDocumentoModel.cs" />
+    <Compile Include="Models\TipoUsuarioModel.cs" />
+    <Compile Include="Models\UsuarioModel.cs" />
+    <Compile Include="Models\VentaReportModel.cs" />
+    <Compile Include="Presenters\Mantenimientos\CategoriaPresenter.cs" />
+    <Compile Include="Presenters\Mantenimientos\ClientePresenter.cs" />
+    <Compile Include="Presenters\Common\DataTableConverter.cs" />
+    <Compile Include="Presenters\Common\ModelDataValidation.cs" />
+    <Compile Include="Presenters\Mantenimientos\DepartamentoPresenter.cs" />
+    <Compile Include="Presenters\Mantenimientos\ImpuestoPresenter.cs" />
+    <Compile Include="Presenters\LoginPresenter.cs" />
+    <Compile Include="Presenters\Mantenimientos\MedidaPresenter.cs" />
+    <Compile Include="Presenters\Mantenimientos\MesaPresenter.cs" />
+    <Compile Include="Presenters\Mantenimientos\MonedaPresenter.cs" />
+    <Compile Include="Presenters\Mantenimientos\ProductoPresenter.cs" />
+    <Compile Include="Presenters\Mantenimientos\ProveedorPresenter.cs" />
+    <Compile Include="Presenters\Mantenimientos\SalaPresenter.cs" />
+    <Compile Include="Presenters\Mantenimientos\UsuarioPresenter.cs" />
+    <Compile Include="Presenters\Movimientos\POSPresenter.cs" />
+    <Compile Include="Presenters\Movimientos\ReportePresenter.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\BaseRepository.cs" />
+    <Compile Include="Repositories\CategoriaRepository.cs" />
+    <Compile Include="Repositories\ClienteRepository.cs" />
+    <Compile Include="Repositories\DepartamentoRepository.cs" />
+    <Compile Include="Repositories\FacturaRepository.cs" />
+    <Compile Include="Repositories\ImpuestoRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ICategoriaRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IClienteRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IDepartamentoRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IFacturaRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IImpuestoRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ILoginRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IMedidaRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IMesaRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IMonedaRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPedidoRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IProductoRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IProveedorRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IProvinciaRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ISalaRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IVentasReportRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ISucursalRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ITipoClienteRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ITipoDocumentoRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ITipoUsuarioRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IUsuarioRepository.cs" />
+    <Compile Include="Repositories\LoginRepository.cs" />
+    <Compile Include="Presenters\MainPresenter.cs" />
+    <Compile Include="Repositories\MedidaRepository.cs" />
+    <Compile Include="Repositories\MesaRepository.cs" />
+    <Compile Include="Repositories\MonedaRepository.cs" />
+    <Compile Include="Repositories\PedidoRepository.cs" />
+    <Compile Include="Repositories\ProductoRepository.cs" />
+    <Compile Include="Repositories\ProveedorRepository.cs" />
+    <Compile Include="Repositories\ProvinciaRepository.cs" />
+    <Compile Include="Repositories\SalaRepository.cs" />
+    <Compile Include="Repositories\VentasRepository.cs" />
+    <Compile Include="Repositories\SucursalRepository.cs" />
+    <Compile Include="Repositories\TipoClienteRepository.cs" />
+    <Compile Include="Repositories\TipoDocumentoRepository.cs" />
+    <Compile Include="Repositories\TipoUsuarioRepository.cs" />
+    <Compile Include="Repositories\UsuarioRepository.cs" />
+    <Compile Include="restauranteDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>restauranteDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="restauranteDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>restauranteDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Views\Interfaces\Mantenimientos\ICategoriaView.cs" />
+    <Compile Include="Views\Interfaces\Mantenimientos\IClienteView.cs" />
+    <Compile Include="Views\Interfaces\Mantenimientos\IDepartamentoView.cs" />
+    <Compile Include="Views\Interfaces\Mantenimientos\IImpuestoView.cs" />
+    <Compile Include="Views\Interfaces\ILoginView.cs" />
+    <Compile Include="Views\Interfaces\IMainView.cs" />
+    <Compile Include="Views\Interfaces\Mantenimientos\IMedidaView.cs" />
+    <Compile Include="Views\Interfaces\IMenuView.cs" />
+    <Compile Include="Views\Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Interfaces\Mantenimientos\IMesaView.cs" />
+    <Compile Include="Views\Interfaces\Mantenimientos\IMonedaView.cs" />
+    <Compile Include="Views\Interfaces\Mantenimientos\IProductoView.cs" />
+    <Compile Include="Views\Interfaces\Mantenimientos\IProveedorView.cs" />
+    <Compile Include="Views\Interfaces\Mantenimientos\ISalaView.cs" />
+    <Compile Include="Views\Interfaces\Mantenimientos\IUsuarioView.cs" />
+    <Compile Include="Views\Interfaces\Movimientos\IClienteControl.cs" />
+    <Compile Include="Views\Interfaces\Movimientos\IFacturaView.cs" />
+    <Compile Include="Views\Interfaces\Movimientos\IPedidosPendientesView.cs" />
+    <Compile Include="Views\Interfaces\Movimientos\IPOSView.cs" />
+    <Compile Include="Views\Interfaces\Movimientos\IReporteVentasView.cs" />
+    <Compile Include="Views\Interfaces\Movimientos\UserControls\IMesaControl.cs" />
+    <Compile Include="Views\Interfaces\Movimientos\UserControls\IProductoControl.cs" />
+    <Compile Include="Views\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainClass.cs" />
+    <Compile Include="Views\Mantenimientos\MantCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Mantenimientos\MantCategorias.Designer.cs">
+      <DependentUpon>MantCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Mantenimientos\MantClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Mantenimientos\MantClientes.Designer.cs">
+      <DependentUpon>MantClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Mantenimientos\MantDepartamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Mantenimientos\MantDepartamentos.Designer.cs">
+      <DependentUpon>MantDepartamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Mantenimientos\MantImpuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Mantenimientos\MantImpuestos.Designer.cs">
+      <DependentUpon>MantImpuestos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Mantenimientos\MantMedidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Mantenimientos\MantMedidas.Designer.cs">
+      <DependentUpon>MantMedidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Mantenimientos\MantMesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Mantenimientos\MantMesas.Designer.cs">
+      <DependentUpon>MantMesas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Mantenimientos\MantMoneda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Mantenimientos\MantMoneda.Designer.cs">
+      <DependentUpon>MantMoneda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Mantenimientos\MantProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Mantenimientos\MantProductos.Designer.cs">
+      <DependentUpon>MantProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Mantenimientos\MantProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Mantenimientos\MantProveedor.Designer.cs">
+      <DependentUpon>MantProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Mantenimientos\MantSalas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Mantenimientos\MantSalas.Designer.cs">
+      <DependentUpon>MantSalas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Mantenimientos\MantUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Mantenimientos\MantUser.Designer.cs">
+      <DependentUpon>MantUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Movimientos\controlesPOS\controlclientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Movimientos\controlesPOS\controlclientes.Designer.cs">
+      <DependentUpon>controlclientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Movimientos\controlesPOS\controlesfacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Movimientos\controlesPOS\controlesfacturas.Designer.cs">
+      <DependentUpon>controlesfacturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Movimientos\controlesPOS\controlmesas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Movimientos\controlesPOS\controlmesas.Designer.cs">
+      <DependentUpon>controlmesas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Movimientos\controlesPOS\controlpendientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Movimientos\controlesPOS\controlpendientes.Designer.cs">
+      <DependentUpon>controlpendientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Movimientos\controlesPOS\controlproductos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Movimientos\controlesPOS\controlproductos.Designer.cs">
+      <DependentUpon>controlproductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Movimientos\ReportePrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Movimientos\ReportePrint.Designer.cs">
+      <DependentUpon>ReportePrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Movimientos\POS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Movimientos\POS.Designer.cs">
+      <DependentUpon>POS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Movimientos\ReporteVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Movimientos\ReporteVentas.Designer.cs">
+      <DependentUpon>ReporteVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Movimientos\FacturaView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Movimientos\FacturaView.Designer.cs">
+      <DependentUpon>FacturaView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Mantenimientos\MantCategorias.resx">
+      <DependentUpon>MantCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Mantenimientos\MantClientes.resx">
+      <DependentUpon>MantClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Mantenimientos\MantDepartamentos.resx">
+      <DependentUpon>MantDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Mantenimientos\MantImpuestos.resx">
+      <DependentUpon>MantImpuestos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Mantenimientos\MantMedidas.resx">
+      <DependentUpon>MantMedidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Mantenimientos\MantMesas.resx">
+      <DependentUpon>MantMesas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Mantenimientos\MantMoneda.resx">
+      <DependentUpon>MantMoneda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Mantenimientos\MantProductos.resx">
+      <DependentUpon>MantProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Mantenimientos\MantProveedor.resx">
+      <DependentUpon>MantProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Mantenimientos\MantSalas.resx">
+      <DependentUpon>MantSalas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Mantenimientos\MantUser.resx">
+      <DependentUpon>MantUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Movimientos\controlesPOS\controlclientes.resx">
+      <DependentUpon>controlclientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Movimientos\controlesPOS\controlesfacturas.resx">
+      <DependentUpon>controlesfacturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Movimientos\controlesPOS\controlmesas.resx">
+      <DependentUpon>controlmesas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Movimientos\controlesPOS\controlpendientes.resx">
+      <DependentUpon>controlpendientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Movimientos\controlesPOS\controlproductos.resx">
+      <DependentUpon>controlproductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Movimientos\controlesPOS\FacturaReport.rdlc" />
+    <EmbeddedResource Include="Views\Movimientos\ReportePrint.resx">
+      <DependentUpon>ReportePrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Movimientos\POS.resx">
+      <DependentUpon>POS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Movimientos\controlesReportes\ReportVentas.rdlc" />
+    <EmbeddedResource Include="Views\Movimientos\ReporteVentas.resx">
+      <DependentUpon>ReporteVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Movimientos\FacturaView.resx">
+      <DependentUpon>FacturaView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\DataSources\Restaurant.Models.PedidoModel.datasource" />
+    <None Include="Properties\DataSources\Restaurant.Models.PedidoProductoModel.datasource" />
+    <None Include="Properties\DataSources\Restaurant.Models.VentaReportModel.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="restauranteDataSet.xsc">
+      <DependentUpon>restauranteDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="restauranteDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>restauranteDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="restauranteDataSet.xss">
+      <DependentUpon>restauranteDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="restauranteDataSet1.xsc">
+      <DependentUpon>restauranteDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="restauranteDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>restauranteDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="restauranteDataSet1.xss">
+      <DependentUpon>restauranteDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Restaurant_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuarioboton blanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizzeria-emblem-on-blackboard-pizza-logo-template-emblem-for-cafe-restaurant-or-food-delivery-service-free-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Pizzeria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnhome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnhome white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btncategorias pink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btncategorias white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnproductos white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnproductos pink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnmesa white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnmesa pink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnempleados pink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnempleados white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnlimpiar pink.png" />
+    <None Include="Resources\btnguardar white.png" />
+    <None Include="Resources\btnguardar pink.png" />
+    <None Include="Resources\btn medidas white.png" />
+    <None Include="Resources\btn medidas pink.png" />
+    <None Include="Resources\btn moneda white.png" />
+    <None Include="Resources\btn moneda pink.png" />
+    <None Include="Resources\btn proveedor white.png" />
+    <None Include="Resources\btn proveedor pink.png" />
+    <None Include="Resources\btn impuestos white.png" />
+    <None Include="Resources\btn impuestos pink.png" />
+    <None Include="Resources\btndepartamentos white.png" />
+    <None Include="Resources\btndepartamentos pink.png" />
+    <None Include="Resources\btnclientes white.png" />
+    <None Include="Resources\btnclientes pink.png" />
+    <None Include="Resources\btnsalas pink.png" />
+    <None Include="Resources\btnsalas white.png" />
+    <None Include="Resources\btn picture pink.png" />
+    <None Include="Resources\btn buscar pink.png" />
+    <Content Include="Resources\btn eliminar pink.png" />
+    <None Include="Resources\btn facturas pink.png" />
+    <None Include="Resources\btn imprimir pink.png" />
+    <None Include="Resources\btn pedidos pink.png" />
+    <None Include="Resources\btn entregado pink.png" />
+    <None Include="Resources\btn generar pink.png" />
+    <None Include="Resources\btn reportes white.png" />
+    <None Include="Resources\btn reportes pink.png" />
+    <Content Include="Resources\btn_eliminar_pink.png" />
+    <None Include="Resources\fondo inicio.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Logo Pizzeria %28Icon%29.ico" />
+    <None Include="Resources\noshowpass.png" />
+    <None Include="Resources\showpass.png" />
+    <None Include="Resources\btnajustes white.png" />
+    <None Include="Resources\btnajustes pink.png" />
+    <None Include="Resources\btncocina pink.png" />
+    <None Include="Resources\btncocina white.png" />
+    <None Include="Resources\btnPOS pink.png" />
+    <None Include="Resources\btnPOS white.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

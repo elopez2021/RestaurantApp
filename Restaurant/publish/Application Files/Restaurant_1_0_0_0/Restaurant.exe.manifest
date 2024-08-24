@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Restaurant.exe" version="1.0.0.0" publicKeyToken="617eff655f12ee54" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Logo Pizzeria (Icon).ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Restaurant" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Restaurant.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Guna.UI.dll" size="1136808">
+      <assemblyIdentity name="Guna.UI" version="1.9.0.1" publicKeyToken="AD275B4BE6718D4B" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>V20t4snvW8Hqm91zro9AgAQmADfDtyIn7tJ+mVFmJ20=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Guna.UI2.dll" size="1510056">
+      <assemblyIdentity name="Guna.UI2" version="2.0.0.1" publicKeyToken="AD275B4BE6718D4B" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>v3KTmSKvos0XBx9RcLSoLQW86x/DPOKc37xo27l/Anc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Restaurant.exe" size="4026840">
+      <assemblyIdentity name="Restaurant" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>0zJcXVIjErhEmzIGsYTB0qSfVDBSMSP2ArXUlGwasX0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Logo Pizzeria (Icon).ico" size="246751">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1rGUs5yHHEAsTCaJNQ6Pi5UblY5dEqjKgsYc4WC9Br4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Restaurant.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on
+           and is designed to work with. Uncomment the appropriate elements
+           and Windows will automatically select the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=ASUS-GAMING-CM\cmoro" issuerKeyHash="fee691501cf10b1e2bf961301ed606d0cb1f440e" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>+LeQRb7tts1BXfl1CK40kIT/iFc+GSZD/cV5gp2PmOY=</DigestValue></Reference></SignedInfo><SignatureValue>sXmNTqa+jZioRIbeJRt5VA37ElFQu6NfgrbLKZ6GM/SnDzRFJQoTgVe/O/CIP7dFNBfuLtjo7XqQg7Vabv+rrGqsUOiUuIo5IM/466hSoGvZI7Hphme6VcZQeEPTV+fFia3VzdrYEXJRzNrtEdY4oTTKyQkSGQnxncSPyOaHeGc=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>vB0Rzry4lOQaHWNlL469oIFB69864Q2HVlcihKMi8BPB0JKigk14/QZAPQWKAGHBL9hZ2ZZFQmIhtlsabGKDBbY9FN2uSYpz5BiqdR6O2tVgXoMYXR40RS5wSdsY6BN69E7iX3HYBmIstvTisAcAgZOVzTuy4S5FhTRBL6n1O20=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e6988f9d8279c5fd4326193e5788ff849034ae0875f95d41cdb6edbe4590b7f8" Description="" Url=""><as:assemblyIdentity name="Restaurant.exe" version="1.0.0.0" publicKeyToken="617eff655f12ee54" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ASUS-GAMING-CM\cmoro</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>3SUzK2W/HjFYOFvBAxWY8igr53aEYZwPC0kFMAZf8zs=</DigestValue></Reference></SignedInfo><SignatureValue>H8N5gsJzYU1qepE+jitA4Bk3iEbp8FjhfEoXkWk0OWUW3CPoWOhYWZZmJnkg79ErVY0uNgHI7sxHdy7uCQDlO4e+DjiR5r782JPhil3Yxk3/hlFhhvsktWVCFSyYBeQnJK7A7o5+1w+mXAGKEDa+qqLQ6oavJdnsPI1HccHM0dE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>vB0Rzry4lOQaHWNlL469oIFB69864Q2HVlcihKMi8BPB0JKigk14/QZAPQWKAGHBL9hZ2ZZFQmIhtlsabGKDBbY9FN2uSYpz5BiqdR6O2tVgXoMYXR40RS5wSdsY6BN69E7iX3HYBmIstvTisAcAgZOVzTuy4S5FhTRBL6n1O20=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQMujzTatYJ41N7GJz3AqsIDANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigAQQBTAFUAUwAtAEcAQQBNAEkATgBHAC0AQwBNAFwAYwBtAG8AcgBvMB4XDTI0MDcwNjE4NTIwM1oXDTI1MDcwNzAwNTIwM1owMzExMC8GA1UEAx4oAEEAUwBVAFMALQBHAEEATQBJAE4ARwAtAEMATQBcAGMAbQBvAHIAbzCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAvB0Rzry4lOQaHWNlL469oIFB69864Q2HVlcihKMi8BPB0JKigk14/QZAPQWKAGHBL9hZ2ZZFQmIhtlsabGKDBbY9FN2uSYpz5BiqdR6O2tVgXoMYXR40RS5wSdsY6BN69E7iX3HYBmIstvTisAcAgZOVzTuy4S5FhTRBL6n1O20CAwEAATANBgkqhkiG9w0BAQsFAAOBgQATM6YuTMJ7U5dCQLaWwN2ThER3LnxZItMDzLAqj8CFsjTw2KyBxut7DC1K6H9LIOLxpsK3vOpPhVDORFtUuCe1CLURQJDvbke4vWDXLrKZgCIOJfQylYv8rvFHW0v1NdBC1g0XJDV8RFPaldBag26+t1Cak6GzEwgQ3llksT6RHg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

@@ -1,0 +1,50 @@
+# Visual Studio files
+.vs/
+Restaurant/bin/
+Restaurant/obj/
+*.user
+*.suo
+*.sln.docstates
+*.vscode
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+Restaurant/[Bb]in/
+Restaurant/[Oo]bj/
+[Ll]og/
+
+# Compiled output
+*.exe
+*.pdb
+*.cache
+*.dat
+*.identcache
+*.userprefs
+*.pidb
+*.resources
+*.res
+*.tmp
+*.vspscc
+*.vssscc
+*.xap
+
+# Compiled output (flutter)
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+.idea/
+.vscode/
+build/
+
+# Miscellaneous
+*.DS_Store
+*.swp
+*.swo
+
+
+*.txt
