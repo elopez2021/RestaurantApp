@@ -1,7 +1,5 @@
 # RestaurantApp
 
-# Proyecto de Restaurante
-
 ## Descripción
 
 Este proyecto está desarrollado en C# utilizando WinForms y está diseñado para la gestión integral de un restaurante. Incluye funcionalidades para el manejo de ventas, mantenimiento de diversos elementos del restaurante, consultas y generación de reportes.
